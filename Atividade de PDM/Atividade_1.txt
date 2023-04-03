@@ -1,0 +1,15 @@
+import 'dart:io';
+import 'dart:math';
+void main() {
+print('Digite o primeiro ponto:');
+  int x1= int.parse(stdin.readLineSync()!);
+print('Digite o segundo ponto:');
+  int y1= int.parse(stdin.readLineSync()!);
+print('Digite o terceiro ponto:');
+  int x2= int.parse(stdin.readLineSync()!);
+print('Digite o quarto ponto:');
+  int y2= int.parse(stdin.readLineSync()!);
+
+  num resultado=sqrt(pow((x2-x1),2)+pow((y2-y1),2));
+  print("A distancia é: $resultado");
+}

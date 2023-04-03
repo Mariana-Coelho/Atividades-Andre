@@ -1,0 +1,13 @@
+import 'dart:io';
+void main() {
+ 
+  print('Digite o tempo de duração do evento em segundos: ');
+  int duracaoSegundos = int.parse(stdin.readLineSync()!);
+
+  
+  int horas = duracaoSegundos ~/ 3600;
+  int minutos = (duracaoSegundos % 3600) ~/ 60;
+  int segundos = duracaoSegundos % 60;
+
+  print('O evento durou $horas horas, $minutos minutos e $segundos segundos.');
+}

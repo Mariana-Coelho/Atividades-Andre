@@ -1,0 +1,14 @@
+import 'dart:io';
+void main() {
+
+  print('Digite o custo de fábrica do carro: ');
+  double custoFabrica = double.parse(stdin.readLineSync()!);
+
+  double percentualDistribuidor = 0.28;
+  double percentualImpostos = 0.45;
+  double custoDistribuidor = custoFabrica * percentualDistribuidor;
+  double custoImpostos = custoFabrica * percentualImpostos;
+  double custoConsumidor = custoFabrica + custoDistribuidor + custoImpostos;
+
+  print('O custo ao consumidor é de R\$ ${custoConsumidor.toStringAsFixed(2)}.');
+}
